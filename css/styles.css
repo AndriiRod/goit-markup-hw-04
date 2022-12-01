@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --btn-text-color: #ffffff;
   --gap-card: 30px;
+  --hover-icon-color: #ffffff;
 }
 
 body {
@@ -141,18 +142,20 @@ img {
 .header-contact > .item:not(:last-child) {
   margin-right: 30px;
 }
-.header-list-link:hover,
-.header-list-link:focus,
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--accent-color);
-}
+
 .header-contact-link > .icon {
   margin-right: 10px;
 
   fill: currentColor;
 }
 /* !###############--Hero--############### */
+.header-list-link:hover,
+.header-list-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -279,11 +282,41 @@ img {
 }
 
 .team-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.team-social-list > .item {
+  width: 44px;
+  height: 44px;
+}
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  color: #afb1b8;
+  border-radius: 50%;
+}
+.team-social-link > .icon {
+  fill: currentColor;
+}
+.team-social-link:hover {
+  color: var(--hover-icon-color);
+  background-color: var(--accent-color);
+}
+
 /* ###############--Footer--###############*/
 .footer {
   background-color: #2f303a;
